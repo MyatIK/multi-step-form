@@ -1,7 +1,7 @@
 import sidebar_bg from '../assets/images/bg-sidebar-desktop.svg'
 import Steps from './Steps'
 
-function LeftPanel(){
+function LeftPanel(props){
     return(
 
        <div>
