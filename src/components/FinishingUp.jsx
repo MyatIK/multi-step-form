@@ -1,21 +1,24 @@
 import StepName from "./StepName"
-
+import { useContext } from "react"
+import PriceContext from "../context/PriceContext"
 
 function FinishingUp(){
+    const{price}=useContext(PriceContext)
+
     return(
         <div>
             <StepName name='Finishing up' description='Double-check everything looks OK before confirming.'/>
             <div className="bg-slate-50 p-5 rounded-lg">
                 <div className="flex justify-between ">
                     <div>
-                        <h3>Arcade(Monthly)</h3>
+                        <h3>{price.text}</h3>
                         <h3>Change</h3>
                     </div>
-                    <h3>$9/mo</h3>
+                    <h3>{price.planPrice}</h3>
                 </div>
                 <div className="flex justify-between">
-                    <h3>Online sercice</h3>
-                    <h3>$1/mo</h3>
+                    <h3>{price.heading}</h3>
+                    <h3>{price.addOnPrice}</h3>
 
                 </div>
                 <div className="flex justify-between">

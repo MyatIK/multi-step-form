@@ -1,5 +1,4 @@
 import StepName from "./StepName"
-import Navigation from "./Navigation"
 
 function Personalinfo(){
 
@@ -29,7 +28,7 @@ function Personalinfo(){
                 </label>
                    
             </form>
-            <Navigation/>
+           
                 
 
         
