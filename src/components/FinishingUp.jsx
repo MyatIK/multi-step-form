@@ -1,9 +1,12 @@
 import StepName from "./StepName"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import PriceContext from "../context/PriceContext"
 
 function FinishingUp(){
-    const{price}=useContext(PriceContext)
+    const{price,addOn}=useContext(PriceContext);
+   
+    
+   
 
     return(
         <div>
@@ -17,13 +20,9 @@ function FinishingUp(){
                     <h3>{price.planPrice}</h3>
                 </div>
                 <div className="flex justify-between">
-                    <h3>{price.heading}</h3>
-                    <h3>{price.addOnPrice}</h3>
+                    <h3>{addOn.heading}</h3>
+                    <h3>{addOn.addOnPrice}</h3>
 
-                </div>
-                <div className="flex justify-between">
-                    <h3>Larger storage</h3>
-                    <h3>$2/mo</h3>
                 </div>
                 
             </div>

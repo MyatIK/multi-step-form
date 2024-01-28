@@ -1,9 +1,17 @@
+import { useContext } from "react"
+import PriceContext from "../context/PriceContext"
 
 function AddOnCheckbox({heading,subtext,addOnPrice}){
+    const{setAddOn}=useContext(PriceContext)
+
+    const handleClick=()=>{
+        setAddOn({heading,addOnPrice})
+    }
+
     return(
 
         <>
-        <div className="p-3 flex inline border-2 hover:border-indigo-500 relative rounded-xl cursor-pointer">
+        <div onClick={handleClick} className="p-3 flex inline border-2 hover:border-indigo-500 relative rounded-xl cursor-pointer">
             <input className="mr-3 accent-indigo-500 cursor-pointer" type="checkbox"/>    
             <div >
                 <h3 className="text-sky-950 font-bold text-sm">{heading}</h3>
