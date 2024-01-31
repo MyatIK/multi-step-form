@@ -5,9 +5,18 @@ import PriceContext from "../context/PriceContext"
 function FinishingUp(){
     const{price,addOn}=useContext(PriceContext);
    
-    
-   
 
+    const items=addOn.map((eachItem)=>{
+        return(
+            <div className="flex justify-between">
+                <h3>{eachItem.heading}</h3>
+                <h3>{eachItem.addOnPrice}</h3>
+            </div>
+
+        )       
+    }
+    )
+   
     return(
         <div>
             <StepName name='Finishing up' description='Double-check everything looks OK before confirming.'/>
@@ -19,9 +28,9 @@ function FinishingUp(){
                     </div>
                     <h3>{price.planPrice}</h3>
                 </div>
-                <div className="flex justify-between">
-                    <h3>{addOn.heading}</h3>
-                    <h3>{addOn.addOnPrice}</h3>
+                <div className="block">
+                    {items}
+                    
 
                 </div>
                 

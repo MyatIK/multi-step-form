@@ -47,7 +47,7 @@ function App() {
     <PlanContextProvider>
       <PriceContextProvider>
       <div className='min-h-screen bg-slate-50 grid md:items-center justify-center'>
-        <div className="bg-white rounded-xl md:grid grid-cols-2 md:p-5 ">
+        <div className="bg-white h-4/5 rounded-xl md:grid grid-cols-2 md:p-5">
           <div>
               <LeftPanel/>
               <LeftPanelMobile/>

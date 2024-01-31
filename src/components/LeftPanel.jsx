@@ -4,10 +4,10 @@ import Steps from './Steps'
 function LeftPanel(props){
     return(
 
-       <div>
+       
 
        
-            <div className=' bg-no-repeat rounded-xl hidden md:block' style={{backgroundImage: `url(${sidebar_bg})`}}>
+            <div className='bg-contain bg-no-repeat h-full rounded-xl hidden md:block' style={{backgroundImage: `url(${sidebar_bg})`}}>
                 <div className='p-3'>
                     <Steps num='1' step='STEP 1' description='YOUR INFO' />
                     <Steps num='2' step='STEP 2' description='SELECT PLAN' />
@@ -19,7 +19,7 @@ function LeftPanel(props){
 
                 
             </div>
-        </div>
+       
             
             
         

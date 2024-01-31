@@ -1,12 +1,16 @@
-import { useContext } from "react"
+import { useContext,useState } from "react"
 import PriceContext from "../context/PriceContext"
 
 function AddOnCheckbox({heading,subtext,addOnPrice}){
-    const{setAddOn}=useContext(PriceContext)
+    const{addNew}=useContext(PriceContext);
 
     const handleClick=()=>{
-        setAddOn({heading,addOnPrice})
+        const addOnTotal={heading,addOnPrice};
+        addNew(addOnTotal)
     }
+
+    
+
 
     return(
 
