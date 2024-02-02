@@ -1,4 +1,4 @@
-import sidebar_bg from '/bg-sidebar-desktop.svg'
+import sidebar_bg from '/Images/bg-sidebar-desktop.svg'
 import Steps from './Steps'
 
 function LeftPanel(props){
