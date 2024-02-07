@@ -3,29 +3,28 @@ import advanced from '../assets/images/icon-advanced.svg'
 import pro from '../assets/images/icon-pro.svg'
 import PlanButton from './PlanButton'
 import StepName from './StepName'
-import { useState } from 'react'
 import { useContext } from 'react'
 import PlanContext from '../context/PlanContext'
 
 
 
-function Plans(){
+function Plans({buttonUse}){
 
     const{plan,togglePlan}=useContext(PlanContext);
     
 
     return(
 
-        <div className='p-3 bg-white round-xl'>
+        <div className="bg-white rounded-xl p-5 z-3 text-left w-4/5 ml-10 absolute top-24 md:top-0 md:relative">
             <StepName name='Select your plan' description='You have the option of monthly or yearly billing.'/>
            
-            {plan === false? (<div className='flex inline space-x-3'>
+            {plan === false? (<div className='space-y-3 md:space-y-0 md:flex md:inline md:space-x-3'>
                 <PlanButton src={arcade} alt={'Arcade Plan'} text={'Arcade'} planPrice={'$9/mo'}/>
                 <PlanButton src={advanced} alt={'Advanced Plan'} text={'Advanced'} planPrice={'$12/mo'}/>
                 <PlanButton src={pro} alt={"Pro Plan"} text={'Pro'} planPrice={'$15/mo'}/>
             
             </div>) : 
-            (<div className='flex inline space-x-3'>
+            (<div className='space-y-3 md:space-y-0 md:flex md:inline md:space-x-3'>
             <PlanButton src={arcade} alt={'Arcade Plan'} text={'Arcade'} planPrice={'$90/yr'} free={'2 months free'}/>
             <PlanButton src={advanced} alt={'Advanced Plan'} text={'Advanced'}  planPrice={'$120/yr'} free={'2 months free'}/>
             <PlanButton src={pro} alt={"Pro Plan"} text='Pro' planPrice={'$150/yr'} free={'2 months free'}/>
@@ -46,6 +45,7 @@ function Plans(){
                 <h3 className='font-bold'>Yearly</h3>
 
             </div>
+            {buttonUse}
             
       
         

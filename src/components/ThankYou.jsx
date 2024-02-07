@@ -1,18 +1,20 @@
-import thankyou from '../assets/images/icon-thank-you.svg'
+import Thanks from '../assets/images/icon-thank-you.svg';
 
+function Thankyou(){
 
-function ThankYou(){
     return(
-        <div>
-            <img src={thankyou} alt="thank you"/>
-            <h1>Thank You!</h1>
-            <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com</p>
 
-        
+        <div className="flex items-center justify-center text-center bg-white rounded-xl p-5 z-3 text-left w-4/5 ml-10 absolute top-24 md:top-0 md:relative">
+            <div>
+                <img src={Thanks} alt='check mark to show you have completed the steps' className='w-14 h-14'/>
+                <h1  className="font-bold text-xl text-sky-950  mt-5 mb-5">Thank you!</h1>
+                <p className="text-slate-400 w-full md:w-80 text-sm">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com</p>
+            </div> 
+
+            
+            
         </div>
-
-
     )
 }
 
-export default ThankYou
+export default Thankyou

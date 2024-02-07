@@ -3,13 +3,13 @@ import StepName from "./StepName"
 import { useContext } from "react"
 import PlanContext from "../context/PlanContext"
 
-function AddOns(){
+function AddOns({buttonUse}){
     const{plan}=useContext(PlanContext);
     
 
     return(
 
-        <div>
+        <div className="bg-white rounded-xl p-5 z-3 text-left w-4/5 ml-10 absolute top-24 md:top-0 md:relative">
             <StepName name='Pick add-ons' description='Add-ons help enhance your gaming experience'/>
 
             {plan === false?(
@@ -27,6 +27,7 @@ function AddOns(){
             </div>)
             }   
             
+            {buttonUse}
            
         
         </div>

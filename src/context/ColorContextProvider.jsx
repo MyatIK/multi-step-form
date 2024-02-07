@@ -2,10 +2,12 @@ import ColorContext from "./ColorContext";
 import { useState } from "react";
 
 const ColorContextProvider=({children})=>{
-    const[color,setColor]=useState(null)
+    const[count,setCount]=useState(0)
+
+    
 
     return(
-        <ColorContext.Provider value={{color,setColor}}>
+        <ColorContext.Provider value={{count,setCount}}>
             {children}
         
         </ColorContext.Provider>
