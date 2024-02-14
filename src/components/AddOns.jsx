@@ -9,7 +9,7 @@ function AddOns({buttonUse}){
 
     return(
 
-        <div className="bg-white rounded-xl p-5 z-3 text-left w-4/5 ml-10 absolute top-24 md:top-0 md:relative">
+        <div className="bg-white rounded-xl p-5 z-3 text-left ml-10 absolute top-24 md:top-0 md:relative">
             <StepName name='Pick add-ons' description='Add-ons help enhance your gaming experience'/>
 
             {plan === false?(
