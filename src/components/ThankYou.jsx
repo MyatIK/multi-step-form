@@ -1,4 +1,4 @@
-import Thanks from '../assets/images/icon-thank-you.svg';
+
 
 function Thankyou(){
 
@@ -7,7 +7,7 @@ function Thankyou(){
         <div className="flex items-center h-full bg-white rounded-xl p-5 z-3 text-left ml-10 absolute top-24 md:top-0 md:relative">
             <div className='text-center'>
                 <div className='flex justify-center'>
-                    <img src={Thanks} alt='check mark to show you have completed the steps' className='w-14 h-14'/>
+                    <img alt='check mark to show you have completed the steps' className='w-14 h-14'/>
 
                 </div>
                 

@@ -15,7 +15,7 @@ function LeftPanel(props){
 
         
 
-        </div>
+            </div>
         
         
                     
