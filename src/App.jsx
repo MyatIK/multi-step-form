@@ -1,13 +1,6 @@
 
 import './App.css'
 import Form from './components/Form';
-import LeftPanel from './components/LeftPanel';
-import LeftPanelMobile from './components/LeftPanelMobile';
-import Personalinfo from './components/Personalinfo';
-import Thankyou from './components/Thankyou';
-import Plans from './components/Plans';
-import AddOns from './components/AddOns';
-import FinishingUp from './components/FinishingUp';
 import { useState } from 'react';
 import PlanContextProvider from './context/PlanContextProvider';
 import PriceContextProvider from './context/PriceContextProvider';

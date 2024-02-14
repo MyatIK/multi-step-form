@@ -3,7 +3,6 @@ import LeftPanelMobile from "./LeftPanelMobile"
 import Personalinfo from "./Personalinfo";
 import Plans from "./Plans";
 import AddOns from "./AddOns";
-import Thankyou from "./Thankyou";
 import { useState } from "react";
 
 function Form(){
@@ -12,12 +11,10 @@ function Form(){
     const displayPage=()=>{
         if(page === 0){
             return <Personalinfo/>
-        }if(page ===1){
+        }else if(page ===1){
             return <Plans/>
-        }else if(page === 2){
-            return <AddOns/>
         }else{
-            return <Thankyou/>
+            return <AddOns/>
         }
 
     }
