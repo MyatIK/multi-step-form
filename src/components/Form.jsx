@@ -3,6 +3,7 @@ import LeftPanelMobile from "./LeftPanelMobile"
 import Personalinfo from "./Personalinfo";
 import Plans from "./Plans";
 import AddOns from "./AddOns";
+import FinishingUp from './FinishingUp';
 import { useState } from "react";
 
 function Form(){
@@ -13,14 +14,16 @@ function Form(){
             return <Personalinfo/>
         }else if(page ===1){
             return <Plans/>
-        }else{
+        }else if(page ===2){
             return <AddOns/>
+        }else{
+            return<FinishingUp/>
         }
 
     }
     return(
 
-        <div className="md:bg-white w-full rounded-xl md:grid grid-cols-3 md:p-5 justify-center h-screen ">
+        <div className="md:bg-white w-full rounded-xl md:grid grid-cols-3 md:p-5 justify-center ">
           <div>
               <LeftPanel/>
               <LeftPanelMobile/>
