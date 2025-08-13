@@ -42,7 +42,7 @@ function Personalinfo({buttonUse}){
             <StepName name='Personal info' description='Please provide your name, email address, and phone number.'/>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label className="block mb-3 font-primaryRegular">
+                    <label className="block mb-3 font-primary-regular">
                         Name
                         <input 
                         type="text"
@@ -53,7 +53,7 @@ function Personalinfo({buttonUse}){
                    {errors.name? (<p>Please enter a name</p>):null}
                 </div>
                 
-                <label className="block mb-3 font-primaryRegular">
+                <label className="block mb-3 font-primary-regular">
                     Email Address
                     <input 
                     type="email"
@@ -61,7 +61,7 @@ function Personalinfo({buttonUse}){
                     onChange={(e)=>{setInputs({email:e.target.value})}}
                     placeholder="e.g. stephanking@lorem.com" className="border rounded-lg p-2 block w-full mt-2"/>
                 </label>
-                <label className="block mb-3 font-primaryRegular">
+                <label className="block mb-3 font-primary-regular">
                     Phone Number
                     <input
                     type="number"
